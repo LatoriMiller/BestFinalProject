@@ -38,10 +38,12 @@ class AdsController < ApplicationController
   end
 
   def edit
+    @categories = Category.all
   end
 
   def new
     @ad = Ad.new
+    @categories = Category.all
   end
 
   private
@@ -50,7 +52,7 @@ class AdsController < ApplicationController
     end
 
     def ad_params
-      params.require(:ad).permit(:title, :author, :description, :price, :contact_info, :category_id)
+      params.require(:ad).permit(:title, :author, :description, :price, :contact_info, :category_id, :image)
 
     end
 end

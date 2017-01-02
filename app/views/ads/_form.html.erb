@@ -1,0 +1,44 @@
+<%= form_for(ad) do |f| %>
+  <% if ad.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this ad from being saved:</h2>
+
+      <ul>
+      <% ad.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+</div>
+<div class="field">
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+</div>
+<div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+</div>
+<div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+</div>
+<div class="field">
+    <%= f.label :contact_info %><br>
+    <%= f.text_area :contact_info %>
+</div>
+<div class="field">
+    <strong>Upload Product Image:</strong>
+    <%= f.file_field :image %>
+</div>
+<div class="field">
+    <%= f.select(:category_id, @categories.collect {|c| [c.name, c.id]}, { include_blank: "Please select a category"}) %>
+</div>
+<div class="actions">
+  <%= f.submit %>
+</div>
+<% end %>

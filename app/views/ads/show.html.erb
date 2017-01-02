@@ -1,2 +1,39 @@
 <h1>Ads#show</h1>
 <p>Find me in app/views/ads/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @ad.title %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= number_to_currency @ad.price %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @ad.category.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @ad.description %>
+</p>
+
+<p>
+  <strong>Seller:</strong>
+  <%= @ad.author %>
+</p>
+
+<p>
+  <strong>Contact Information:</strong>
+  <%= @ad.contact_info %>
+</p>
+
+<p>
+    <%= image_tag @ad.image, size: 50 %>
+</p>
+<%= link_to 'Edit', edit_ad_path(@ad) %> |
+<%= link_to 'Back', ads_path %>
