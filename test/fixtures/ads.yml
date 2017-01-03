@@ -2,14 +2,16 @@
 
 one:
   title: MyString
-  author: MyString
-  content: MyText
+  price: 1.5
+  description: MyText
+  image: MyString
   user_id: 1
   category_id: 1
 
 two:
   title: MyString
-  author: MyString
-  content: MyText
+  price: 1.5
+  description: MyText
+  image: MyString
   user_id: 1
   category_id: 1
