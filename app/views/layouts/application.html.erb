@@ -2,13 +2,16 @@
 <html>
   <head>
     <title>BestFinalProject</title>
-    <%= csrf_meta_tags %>
-
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>   
   </head>
 
   <body>
     <!-- <h2>We are the A team!  Aaron, Latori and Liz</h2> -->
-    <%= yield %>
+	<div class="container">
+    	<%= yield %>
+    </div>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
