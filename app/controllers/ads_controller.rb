@@ -15,10 +15,12 @@ class AdsController < ApplicationController
   # GET /ads/new
   def new
     @ad = Ad.new
+    @categories = Category.all
   end
 
   # GET /ads/1/edit
   def edit
+    @categories = Category.all
   end
 
   # POST /ads
