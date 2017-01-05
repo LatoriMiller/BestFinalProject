@@ -10,7 +10,6 @@ class CategoriesController < ApplicationController
   end
 
   def show
-  	@category = Category.all
   end
 
   def edit
