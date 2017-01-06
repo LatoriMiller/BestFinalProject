@@ -22,7 +22,6 @@
                 <% end %>
                 </p>
 
-<<<<<<< HEAD
                 <%= image_tag(ad.image, size:"200") %>
                 <!-- <img class="img-responsive" src=ad.image alt=""> -->
                 
@@ -30,42 +29,6 @@
             </div>
         <% end %>
 
+
         <%= link_to 'New Ad', new_ad_path %>
-=======
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Price</th>
-      <th>Description</th>
-      <th>Image</th>
-      <th>User</th>
-      <th>Category Number</th>
-      <th>Category </th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @ads.each do |ad| %>
-      <tr>
-        <td><%= ad.title %></td>
-        <td><%= ad.price %></td>
-        <td><%= ad.description %></td>
-        <td><%= ad.image %></td>
-        <td><%= ad.user_id %></td>
-        <td><%= ad.category_id %></td>
-        <td><%= ad.category.name %></td>
-        <td><%= image_tag ad.image.url(:thumb) %></td>
-        <td><%= link_to 'Show', ad %></td>
-        <td><%= link_to 'Edit', edit_ad_path(ad) %></td>
-        <td><%= link_to 'Destroy', ad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Ad', new_ad_path %>
->>>>>>> 54338af3d72659d05cc2be34b3af7426e81c488b

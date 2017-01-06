@@ -6,14 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'devise'
-<<<<<<< HEAD
-gem 'bootstrap-sass'
-gem 'font-awesome-sass'
-gem 'jquery-easing-rails'
-=======
-gem 'paperclip'
-gem 'better_errors'
->>>>>>> 54338af3d72659d05cc2be34b3af7426e81c488b
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'

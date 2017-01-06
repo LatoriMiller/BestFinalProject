@@ -42,17 +42,6 @@ GEM
     autoprefixer-rails (6.6.1)
       execjs
     bcrypt (3.1.11)
-<<<<<<< HEAD
-    bcrypt (3.1.11-x86-mingw32)
-    bootstrap-sass (3.3.7)
-      autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
-=======
-    better_errors (2.1.1)
-      coderay (>= 1.0.0)
-      erubis (>= 2.6.6)
-      rack (>= 0.9.0)
->>>>>>> 54338af3d72659d05cc2be34b3af7426e81c488b
     builder (3.2.2)
     byebug (9.0.6)
     climate_control (0.0.3)
@@ -202,11 +191,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-<<<<<<< HEAD
-  bootstrap-sass
-=======
-  better_errors
->>>>>>> 54338af3d72659d05cc2be34b3af7426e81c488b
+
   byebug
   coffee-rails (~> 4.2)
   devise
