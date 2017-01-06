@@ -1,29 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @ad.title %>
+<p class="title">
+<%= @ad.title %>
+</p>
+
+<p class="price">
+  <strong>Price:</strong> $<%= @ad.price %>
 </p>
 
 <p>
-  <strong>Price:</strong>
-  <%= @ad.price %>
-</p>
-
-<p>
-  <strong>Description:</strong>
   <%= @ad.description %>
 </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @ad.image %>
-  <%= @ad.image.url(:thumb) %>
-</p>
+
+<%= image_tag(@ad.image, height:"400") %>
 
 <p>
-  <strong>User:</strong>
-  <%= @ad.user_id %>
+  <strong>User:</strong> <%= @ad.user_id %>
 </p>
 
 <p>
