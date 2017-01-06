@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+#yield {
+	margin-top: 100px;
+}
+
+.portfolio-item {
+	border: 2px solid red;
+	border-radius: 10px;
+}
+
+.title {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.price {
+	font-size: 30;
+	font-weight: bold;
+}
