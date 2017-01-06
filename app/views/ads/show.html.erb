@@ -12,7 +12,15 @@
   <%= @ad.description %>
 </p>
 
+<<<<<<< HEAD
 <%= image_tag(@ad.image, height:"400") %>
+=======
+<p>
+  <strong>Image:</strong>
+  <%= @ad.image %>
+  <%= @ad.image.url(:thumb) %>
+</p>
+>>>>>>> 54338af3d72659d05cc2be34b3af7426e81c488b
 
 <p>
   <strong>User:</strong> <%= @ad.user_id %>
