@@ -6,6 +6,14 @@ Rails.application.routes.draw do
 
   get 'price' => 'storefront#items_by_price'
 
+  get 'home' => 'storefront#index'
+
+  get 'about' => 'storefront#about'
+
+  get 'management' => 'storefront#management'
+
+  get 'settings' => 'storefront#settings'
+
   get 'categories/index'
 
   resources :ads

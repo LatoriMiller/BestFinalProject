@@ -2,19 +2,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta charset="utf-8">
     <title>Homepage</title>
   </head>
   <body>
 <div class="container">
-    <h1>The DogShop Homepage</h1>
+  <img src="https://static.pexels.com/photos/7720/night-animal-dog-pet.jpg" alt="Dog" style="width:500px;height:300px; center;">
+
+    <h1>Welcome to The DogShop</h1>
+    <h4>A local resource for dog lovers.</h4>
+    <br>
+    <button><a href="/ads/new">Post to classifieds</a></button>
+    <br>
+    <!-- Need to center the Ads Link  -->
     <%= link_to 'See all Ads', ads_path%>
-    <%= link_to 'Link to Category', categorical_path%>
+    <br>
+    <!-- Need a table with columns for Shop Supplies and Shop Services -->
+
+    <%= link_to 'Clothes & Shoes', categorical_path%>
+    <br>
+    <%= link_to 'Beds & Blankets', categorical_path%>
+    <br>
+    <%= link_to 'Bowls & Feeders', categorical_path%>
+    <br>
+    <%= link_to 'Walking', categorical_path%>
+    <br>
+    <%= link_to 'Training', categorical_path%>
+    <br>
+    <%= link_to 'Grooming', categorical_path%>
 
 </div>
-  
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
