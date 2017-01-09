@@ -19,20 +19,16 @@
     <%= link_to 'See all Ads', ads_path%>
     <br>
     <!-- Need a table with columns for Shop Supplies and Shop Services -->
-
-    <%= link_to 'Clothes & Shoes', categorical_path%>
-    <br>
-    <%= link_to 'Beds & Blankets', categorical_path%>
-    <br>
-    <%= link_to 'Bowls & Feeders', categorical_path%>
-    <br>
-    <%= link_to 'Walking', categorical_path%>
-    <br>
-    <%= link_to 'Training', categorical_path%>
-    <br>
-    <%= link_to 'Grooming', categorical_path%>
-
 </div>
+
+<div>
+  <ul>
+    <% @categories.each do |cat| %>
+      <li><%= link_to cat.name, categorical_path(cat_id: cat.id) %></li>
+    <% end %>
+  </ul>
+</div>
+
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
