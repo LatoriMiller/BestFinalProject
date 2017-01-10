@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   get 'categories/index'
 
+  get 'your_ads' => 'ads#your_ads'
   resources :ads
   devise_for :users
   resources :users

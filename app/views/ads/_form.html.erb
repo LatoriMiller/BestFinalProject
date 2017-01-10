@@ -31,10 +31,14 @@
     <%= f.file_field :image %>
   </div>
 
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :user_id %>
     <%= f.number_field :user_id %>
+  </div> -->
+  <div class="field hidden">
+      <%= f.number_field :user_id, value: current_user.id %>
   </div>
+
 
   <div class="field">
     <%= f.select(:category_id, @categories.collect {|c| [c.name, c.id]}, { include_blank: "Please select a category"}) %>

@@ -23,6 +23,8 @@
   <strong>Category:</strong>
   <%= @ad.category_id %>
 </p>
-
+<% if current_user.id == @ad.user_id %>
 <%= link_to 'Edit', edit_ad_path(@ad) %> |
+<%= link_to 'Delete', @ad, method: :delete, data: {confirm: 'Are you sure?'} %> |
+<% end %>
 <%= link_to 'Back', ads_path %>

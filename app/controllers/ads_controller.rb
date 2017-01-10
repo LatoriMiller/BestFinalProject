@@ -12,6 +12,9 @@ class AdsController < ApplicationController
   def show
   end
 
+  def your_ads 
+  end
+
   # GET /ads/new
   def new
     @ad = Ad.new

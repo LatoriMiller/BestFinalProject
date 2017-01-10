@@ -1,3 +1,8 @@
-<h1>Here the user will see either #1 or #2 based on a if then</h1>
-<h1>1.See current listings if they have any</h1>
-<h1>2. See that they have no ads posted and a create an Ad button</h1>
+<!--PLEASE LEAVE BECAUSE MAY USE IN FUTURE   -->
+<!-- THE AD MANAGEMENT LINK(IN THE NAVBAR) IS CURRENTLY LINKED TO /your_ads  -->
+<% if current_user.ads.length > 0 %>
+  <h2><%= link_to "See Your Ads", your_ads_path %></h2>
+<% else %>
+  <h2>You have no current listings</h2>
+  <button><a href="/ads/new">Post to classifieds</a></button>
+<% end %>
