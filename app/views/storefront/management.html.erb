@@ -1,8 +1,8 @@
-<!--PLEASE LEAVE BECAUSE MAY USE IN FUTURE INTENDED TO ORGANISE AD MANAGEMENT OPTIONS  -->
-<!-- THE AD MANAGEMENT LINK(IN THE NAVBAR) IS CURRENTLY USING THE PATH /your_ads instead of /management  -->
-<% if current_user.ads.length > 0 %>
-  <h2><%= link_to "See Your Ads", your_ads_path %></h2>
-<% else %>
-  <h2>You have no current listings</h2>
-  <button><a href="/ads/new">Post to classifieds</a></button>
-<% end %>
+<div class="container">
+  <% if current_user.ads.length > 0 %>
+    <h2><%= link_to "See Your Ads", your_ads_path %></h2>
+  <% else %>
+    <h2>You have no current listings</h2>
+    <button><a href="/ads/new">Post to classifieds</a></button>
+  <% end %>
+</div>

@@ -1,10 +1,11 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
 
-<p class="title">
+<p>
 <%= @ad.title %>
 </p>
 
-<p class="price">
+<p>
   <strong>Price:</strong> $<%= @ad.price %>
 </p>
 
@@ -28,3 +29,4 @@
 <%= link_to 'Delete', @ad, method: :delete, data: {confirm: 'Are you sure?'} %> |
 <% end %>
 <%= link_to 'Back', ads_path %>
+</div>
