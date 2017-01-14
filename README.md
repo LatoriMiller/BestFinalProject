@@ -1,24 +1,11 @@
 # README
+Best Final Project Version 1.0 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Database initalization:
+Before starting the rails server it is necessary to:
+- rake db:seed 
 
-Things you may want to cover:
+Application is not currently deployed
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Contact:
+TTS A team with concerns
