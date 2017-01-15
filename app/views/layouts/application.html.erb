@@ -21,13 +21,12 @@
     <div>
 
       <%= render "/layouts/navbar" %>
-      <br></br>
-      <br></br>
-      <%= yield %>
 
-      <%= render "/layouts/footer" %>
+      <div class="move">
+        <%= yield %>
+        <%= render "/layouts/footer" %>
+      </div>
 
-    </div>
 
   </body>
 </html>

@@ -3,7 +3,7 @@
 
 //Added the 3 classes below to style the home page
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .multiColumn {
@@ -17,7 +17,11 @@ ul {
     padding: 20px;
     margin: 0 auto;
 }
-
+//Added Move to control page rendering
+.move {
+    position: relative;
+    top: 100px;
+}
 // Global Components
 
 body {
@@ -153,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
     .navbar-custom {
-        background-color: transparent;
+        background-color: black;
         padding: 25px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
