@@ -1,15 +1,17 @@
 <div class="container">
 <p id="notice"><%= notice %></p>
 
+
+<h4>
+  <%= @ad.title %>
+</h4>
+
 <p>
-<%= @ad.title %>
+  <strong>Price: </strong> $<%= @ad.price %>
 </p>
 
 <p>
-  <strong>Price:</strong> $<%= @ad.price %>
-</p>
-
-<p>
+  <strong>Description: </strong>
   <%= @ad.description %>
 </p>
 

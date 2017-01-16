@@ -22,6 +22,18 @@ ul {
     position: relative;
     top: 100px;
 }
+
+//Adds bg image to login
+.loginbg {
+  background-image: url(image-path("dogLogin.jpg"));
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center right;
+}
+.ctrText{
+  text-align: center;
+}
+
 // Global Components
 
 body {
@@ -218,8 +230,8 @@ header {
 @media(min-width:768px) {
     header {
         .intro-text {
-            padding-top: 300px;
-            padding-bottom: 200px;
+            padding-top: 100px;
+            padding-bottom: 100px;
             .intro-lead-in {
                 @include serif-font;
                 font-style: italic;
