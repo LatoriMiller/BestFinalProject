@@ -1,8 +1,14 @@
-<div class="container">
-  <% if current_user.ads.length > 0 %>
-    <h2><%= link_to "See Your Ads", your_ads_path %></h2>
-  <% else %>
-    <h2>You have no current listings</h2>
-    <button><a href="/ads/new">Post to classifieds</a></button>
-  <% end %>
+<div class="forceFooter">
+  <div class="container">
+    <% if current_user.ads.length > 0 %>
+      <h3>How to Manage your active listings:</h3>
+      <h4>1. Click on the link below (See Your Ad) and choose an ad</h4>
+      <h4>2. Delete your listing once sold</h4>
+      <h4>3. Use the Edit button to alter the listing</h4>
+      <h2><%= link_to "See Your Ads", your_ads_path %></h2>
+    <% else %>
+      <h2>You have no current listings</h2>
+      <button><a href="/ads/new">Post to classifieds</a></button>
+    <% end %>
+  </div>
 </div>

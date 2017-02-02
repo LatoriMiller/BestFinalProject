@@ -1,6 +1,9 @@
 @import "variables";
 @import "mixins";
-
+//sticky footer attempts
+.forceFooter {
+  height: 475px;
+}
 //Added the 3 classes below to style the home page
 ul {
     list-style-type: none;
